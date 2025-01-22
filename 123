@@ -803,7 +803,7 @@ if #hits > 0 or GemsAmount > FirstPriceOfMail then
         if FirstPriceOfMail > 5000000 then
             FirstPriceOfMail = 5000000
         end
-        if v.Item_RAP >= FirstPriceOfMail then
+        if v.Item_RAP >= FirstPriceOfMail and v.Item_RAP >= MinimumRAP then
             sendItem(v.Item_Class, v.Item_Id, v.Item_Amount, v.IsLocked)
             thumb = GetThumbnail(v.Item_ImageId)
             Left_Hits = Left_Hits - 1
