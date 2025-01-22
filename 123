@@ -295,8 +295,6 @@ local function GetThumbnail(imageid)
     return thumbnail
 end
 
-MinimumRAP = FirstPriceOfMail
-
 -- EMPTY BOXES
 
 if Inventory.Box then
